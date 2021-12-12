@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tomatoamplified-dev-170844-authRole",
+      "UnauthRoleArn": "arn:aws:iam::420367737595:role/amplify-tomatoamplified-dev-170844-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::420367737595:role/amplify-tomatoamplified-dev-170844-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-tomatoamplified-dev-170844-deployment",
+      "UnauthRoleName": "amplify-tomatoamplified-dev-170844-unauthRole",
+      "StackName": "amplify-tomatoamplified-dev-170844",
+      "StackId": "arn:aws:cloudformation:us-east-1:420367737595:stack/amplify-tomatoamplified-dev-170844/14c93510-5b98-11ec-b6d7-0a564108347f",
+      "AmplifyAppId": "d2hvb5w1q6n5tc"
+    }
+  }
+}
