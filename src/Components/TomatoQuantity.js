@@ -16,7 +16,7 @@ const TomatoQuantity = () => {
       identityPoolId: "us-east-1:73acf2f3-8a1e-4a81-8644-822f680087bf",
       region: "us-east-1",
       userPoolId: "us-east-1_WQTMxak9r",
-      userPoolWebClientId: "1t4mqglm54mmcpp16rp6ns0cvh"
+      userPoolWebClientId: "mcg069s7aq3432dq1d38tdotc"
     }
   });
   
