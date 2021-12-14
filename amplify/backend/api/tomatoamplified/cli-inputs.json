@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "tomatoamplified",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "D:\\Universidad\\S8\\IoT\\workspace\\tomato-amplified\\amplify\\backend\\api\\tomatoamplified\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authtomatoamplified9283939c"
+    }
+  }
+}
