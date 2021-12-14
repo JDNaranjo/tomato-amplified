@@ -9,7 +9,7 @@ import { PubSub, Auth } from 'aws-amplify';
 
 const TomatoQuantity = () => {
 
-  const [quantity, setQuantity] = useState("0");
+  const [quantity, setQuantity] = useState("3");
 
   Amplify.configure({
     Auth: {
@@ -25,7 +25,7 @@ const TomatoQuantity = () => {
   }));
 
   PubSub.subscribe('projectfinal/icesi/edificioL/lab501/quantity_of_tomatoes/').subscribe({
-    next: data => console.error(data),
+    next: data => console.log(data),
     error: error => console.error(error),
     close: () => console.log('Done'),
   });
