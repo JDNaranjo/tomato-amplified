@@ -22,7 +22,7 @@ const TomatoQuantity = () => {
   
   Amplify.addPluggable(new AWSIoTProvider({
     aws_pubsub_region: "us-east-1",
-    aws_pubsub_endpoint: `ayedcd8eu2d2s-ats.iot.us-east-1.amazonaws.com/mqtt`,
+    aws_pubsub_endpoint: `ayedcd8eu2d2s-ats.iot.us-east-1.amazonaws.com`,
   }));
 
   PubSub.subscribe('projectfinal/icesi/edificioL/lab501/quantity_of_tomatoes/').subscribe({
