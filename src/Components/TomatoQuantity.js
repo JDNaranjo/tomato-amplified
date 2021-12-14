@@ -4,7 +4,7 @@ import { Card } from 'antd';
 import "antd/dist/antd.css";
 
 import Amplify from 'aws-amplify';
-import { AWSIoTProvider } from '@aws-amplify/pubsub';
+import { MqttOverWSProvider } from '@aws-amplify/pubsub/lib/Providers';
 import { PubSub, Auth } from 'aws-amplify';
 
 const TomatoQuantity = () => {
@@ -20,8 +20,7 @@ const TomatoQuantity = () => {
     }
   });
   
-  Amplify.addPluggable(new AWSIoTProvider({
-    aws_pubsub_region: "us-east-1",
+  Amplify.addPluggable(new MqttOverWSProvider({
     aws_pubsub_endpoint: `ayedcd8eu2d2s-ats.iot.us-east-1.amazonaws.com`,
   }));
 
