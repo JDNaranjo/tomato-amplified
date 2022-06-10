@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Card } from 'antd';
+import { Card, Row } from 'antd';
 import "antd/dist/antd.css";
 
 import Amplify from 'aws-amplify';
@@ -9,7 +9,7 @@ import { PubSub, Auth } from 'aws-amplify';
 
 const TomatoQuantity = () => {
 
-  const [quantity, setQuantity] = useState("3");
+  const [quantity, setQuantity] = useState("2");
 
   Amplify.configure({
     Auth: {
@@ -32,10 +32,34 @@ const TomatoQuantity = () => {
 
   return (
     <div className="Sensor">
-      <Card title="Tomatoes quantity" style={{ width: 300, marginTop: "5%", marginLeft: "5%"}}>
-        <p>{quantity}</p>
-        <p></p>
-      </Card>
+      <Row>
+        <Card title="Planta #1" style={{ width: 300, marginTop: "5%", marginLeft: "5%"}}>
+          <p>La planta tiene de alto:</p>
+          <p>22.7 cm</p>
+        </Card>
+        <Card title="Planta #2" style={{ width: 300, marginTop: "5%", marginLeft: "5%"}}>
+          <p>La planta tiene de alto:</p>
+          <p>34.1 cm</p>
+        </Card>
+        <Card title="Planta #3" style={{ width: 300, marginTop: "5%", marginLeft: "5%"}}>
+          <p>La planta tiene de alto:</p>
+          <p>13.3 cm</p>
+        </Card>
+      </Row>
+      <Row>
+        <Card title="Planta #4" style={{ width: 300, marginTop: "5%", marginLeft: "5%"}}>
+          <p>La planta tiene de alto:</p>
+          <p>26.8 cm</p>
+        </Card>
+        <Card title="Planta #5" style={{ width: 300, marginTop: "5%", marginLeft: "5%"}}>
+          <p>La planta tiene de alto:</p>
+          <p>30.9 cm</p>
+        </Card>
+        <Card title="Planta #6" style={{ width: 300, marginTop: "5%", marginLeft: "5%"}}>
+          <p>La planta tiene de alto:</p>
+          <p>19.0 cm</p>
+        </Card>
+      </Row>
     </div>
   );
 }
